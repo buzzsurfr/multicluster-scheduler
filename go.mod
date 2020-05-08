@@ -5,6 +5,7 @@ go 1.13
 require (
 	admiralty.io/multicluster-controller v0.5.0
 	admiralty.io/multicluster-service-account v0.6.1
+	github.com/buzzsurfr/kubernetes v1.17.0
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-logr/zapr v0.1.1 // indirect
 	github.com/go-test/deep v1.0.1
@@ -16,17 +17,16 @@ require (
 	github.com/virtual-kubelet/virtual-kubelet v1.2.1
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.2.0 // indirect
-	google.golang.org/genproto v0.0.0-20190716160619-c506a9f90610 // indirect
 	k8s.io/api v0.17.0
 	k8s.io/apimachinery v0.17.0
 	k8s.io/client-go v10.0.0+incompatible
 	k8s.io/code-generator v0.17.0
 	k8s.io/component-base v0.17.0
 	k8s.io/klog v1.0.0
-	k8s.io/kubernetes v1.17.0
+	k8s.io/kubernetes v1.18.2
 	k8s.io/sample-controller v0.17.0
 	sigs.k8s.io/controller-runtime v0.4.0
-	sigs.k8s.io/yaml v1.1.0
+	sigs.k8s.io/yaml v1.2.0
 )
 
 // replace admiralty.io/multicluster-controller => ../multicluster-controller

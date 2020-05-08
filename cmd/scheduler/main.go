@@ -23,10 +23,10 @@ import (
 
 	"admiralty.io/multicluster-scheduler/pkg/scheduler_plugins/candidate"
 	"admiralty.io/multicluster-scheduler/pkg/scheduler_plugins/proxy"
+	scheduler "github.com/buzzsurfr/kubernetes/cmd/kube-scheduler/app"
 	"github.com/spf13/pflag"
 	cliflag "k8s.io/component-base/cli/flag"
 	"k8s.io/component-base/logs"
-	scheduler "k8s.io/kubernetes/cmd/kube-scheduler/app"
 )
 
 func main() {

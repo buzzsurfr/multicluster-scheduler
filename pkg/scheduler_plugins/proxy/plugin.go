@@ -29,6 +29,8 @@ import (
 	"admiralty.io/multicluster-scheduler/pkg/model/delegatepod"
 	"admiralty.io/multicluster-scheduler/pkg/model/proxypod"
 	"admiralty.io/multicluster-service-account/pkg/config"
+	framework "github.com/buzzsurfr/kubernetes/pkg/scheduler/framework/v1alpha1"
+	"github.com/buzzsurfr/kubernetes/pkg/scheduler/nodeinfo"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -36,9 +38,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/klog"
-	framework "k8s.io/kubernetes/pkg/scheduler/framework/v1alpha1"
-	"k8s.io/kubernetes/pkg/scheduler/nodeinfo"
+	"github.com/buzzsurfr/kubernetes
 )
 
 type Plugin struct {
